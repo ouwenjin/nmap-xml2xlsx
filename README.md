@@ -205,12 +205,6 @@ dangerous_services = {'ftp','telnet','ssh','mysql','redis','mongodb', ...}
 
 ---
 
-## 许可证
-
-本项目建议采用 **MIT License**（宽松、适合开源工具）。示例 `LICENSE` 文件请见仓库。
-
----
-
 ## 作者 & 致谢
 
 作者：`zhkali`
