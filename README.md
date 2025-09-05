@@ -220,7 +220,3 @@ dangerous_services = {'ftp','telnet','ssh','mysql','redis','mongodb', ...}
 * Gitee: `https://gitee.com/zhkali/nmap-xml2xlsx`
 
 感谢使用者的反馈与贡献！
-
----
-
-如果你需要，我也可以把 `requirements.txt`、`LICENSE`（MIT 模板）和 `CONTRIBUTING.md` 一并放到画布，便于直接复制。
