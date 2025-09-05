@@ -1,4 +1,4 @@
-# nmap-xml2xlsx — 端口调研合并工具（Nmap XML / Excel / CSV -> 端口调研表）
+# nmap — 端口调研合并工具（Nmap XML / Excel / CSV -> 端口调研表）
 
 > 将多个 Nmap XML 与本地 Excel/CSV 扫描结果合并、去重、标注“危险端口”，并导出美观的 Excel 报表。适合渗透测试、资产盘点与网管运维的端口调研流程。
 
@@ -6,8 +6,8 @@
 
 仓库：
 
-* GitHub: `https://github.com/ouwenjin/nmap-xml2xlsx`
-* Gitee: `https://gitee.com/zhkali/nmap-xml2xlsx`
+* GitHub: `https://github.com/ouwenjin/nmap`
+* Gitee: `https://gitee.com/zhkali/nmap`
 
 ---
 
@@ -24,35 +24,14 @@
 
 ---
 
-## 要求
-
-* Python 3.8+
-* 依赖包（示例）：
-
-  ```
-  pandas
-  openpyxl
-  tqdm
-  ```
-
-建议在虚拟环境中安装（venv / conda）。
-
-示例 `requirements.txt`：
-
-```
-pandas>=1.3
-openpyxl>=3.0
-tqdm>=4.0
-```
-
 ---
 
 ## 安装
 
 ```bash
 # 克隆仓库
-git clone https://github.com/ouwenjin/nmap-xml2xlsx.git
-cd nmap-xml2xlsx
+git clone https://github.com/ouwenjin/nmap.git
+cd nmap
 
 # 建议创建虚拟环境
 python -m venv .venv
@@ -69,12 +48,12 @@ pip install -r requirements.txt
 
 ## 使用说明（CLI）
 
-脚本示例名：`nmap_merge.py`（或你实际保存的脚本名）。
+脚本示例名：`nmap.py`（或你实际保存的脚本名）。
 
 基本用法：
 
 ```bash
-python nmap_merge.py
+python nmap.py
 ```
 
 可用参数（常用）：
@@ -96,19 +75,19 @@ python nmap_merge.py
 1. 从默认 `开放端口.xlsx` + 目录中所有 `.xml` 生成表：
 
 ```bash
-python nmap_merge.py
+python nmap.py
 ```
 
 2. 指定输入与输出，并删除临时 `out.xml`：
 
 ```bash
-python nmap_merge.py -i hosts.csv -o report.xlsx --cleanup
+python nmap.py -i hosts.csv -o report.xlsx --cleanup
 ```
 
 3. 在 CI / 无颜色终端运行、开启详细日志：
 
 ```bash
-python nmap_merge.py --no-color --verbose
+python nmap.py --no-color --verbose
 ```
 
 ---
@@ -210,7 +189,7 @@ dangerous_services = {'ftp','telnet','ssh','mysql','redis','mongodb', ...}
 作者：`zhkali`
 仓库：
 
-* GitHub: `https://github.com/ouwenjin/nmap-xml2xlsx`
-* Gitee: `https://gitee.com/zhkali/nmap-xml2xlsx`
+* GitHub: `https://github.com/ouwenjin/nmap`
+* Gitee: `https://gitee.com/zhkali/nmap`
 
 感谢使用者的反馈与贡献！
